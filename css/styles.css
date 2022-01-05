@@ -1,7 +1,23 @@
-.wedding-banner {
+body {
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+#wedding-banner {
     background: url("/assets/landing.jpeg") no-repeat center center;
     background-size: cover;
     background-position: 65%;
+}
+
+#event-details {
+    background-color: aliceblue;
 }
 
 .wedding-banner-text {
@@ -16,6 +32,16 @@
 }
 
 .save-the-date {
-    padding-top:35vh;
     text-align: center;
+    padding-top: 30vh;
+}
+
+@media (min-width: 576px) {   
+    .save-the-date {
+        padding-top: 0;
+    }
+
+    .wedding-banner-all {
+        margin-top: 35vh;
+    }
 }
