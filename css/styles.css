@@ -10,6 +10,10 @@ body::-webkit-scrollbar {
     min-height: 100vh;
 }
 
+#gallery {
+    min-height: 50vh;
+}
+
 #wedding-banner {
     background: url("/assets/landing.jpeg") no-repeat center center;
     background-size: cover;
@@ -22,8 +26,8 @@ body::-webkit-scrollbar {
 
 .down-arrow {
     position: absolute;
-    top: 90vh;
-    left: 49vw;
+    top: 85vh;
+    left: 48vw;
 }
 
 .wedding-banner-text {
