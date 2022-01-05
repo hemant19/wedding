@@ -1,0 +1,21 @@
+.wedding-banner {
+    background: url("/assets/landing.jpeg") no-repeat center center;
+    background-size: cover;
+    background-position: 65%;
+}
+
+.wedding-banner-text {
+    font-size: 40px;
+    color: azure;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;        
+}
+
+.wedding-banner-date {
+    font-size: x-large;
+}
+
+.save-the-date {
+    padding-top:35vh;
+    text-align: center;
+}
