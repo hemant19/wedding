@@ -1,68 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&family=Mea+Culpa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
 body {
-    min-height: 100vh;
+  height: 100vh !important;
+  width: 100vw !important;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+
+#loader {
+  position: fixed;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1;
+  overflow: visible;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-fluid {
+  padding: 0px !important;
 }
 
 .section {
-    min-height: 100vh;
+  height: 100vh !important;
 }
 
 #gallery {
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
 #wedding-banner {
-    background: url("/assets/landing.jpeg") no-repeat center center;
-    background-size: cover;
-    background-position: 65%;
+  background: url("/assets/landing.jpeg") no-repeat center center;
+  background-size: cover;
+  background-position: 65%;
+  height: inherit;
 }
 
-#events {
-    background-color: aliceblue;
+.fas {
+  font-size: 50px;
+  color: white;
 }
 
 .down-arrow {
-    position: absolute;
-    top: 85vh;
-    left: 48vw;
+  position: absolute;
+  top: 90vh;
+  left: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.down-arrow:hover {
+  top: 91vh;
 }
 
 .wedding-banner-text {
-    font-size: 40px;
-    color: azure;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;        
+  font-size: 40px;
+  color: azure;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
 }
 
 .wedding-banner-date {
-    font-size: x-large;
+  font-size: x-large;
 }
 
 .save-the-date {
-    text-align: center;
-    padding-top: 30vh;
+  text-align: center;
+  padding-top: 30vh;
 }
 
-@media (min-width: 576px) {   
-    .save-the-date {
-        padding-top: 0;
-    }
+@media (min-width: 576px) {
+  .save-the-date {
+    padding-top: 0;
+  }
+  .wedding-banner-all {
+    margin-top: 35vh;
+  }
+}
 
-    .wedding-banner-all {
-        margin-top: 35vh;
-    }
+@media only screen and (max-width: 600px) {
+  .save-the-date {
+    padding-top: 20vh;
+  }
 }
 
 footer {
-    height: 5vh;
-    background-color: aliceblue;
+  height: 5vh;
+  background-color: aliceblue;
+}
+
+h1 {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 500;
+  font-size: 5.5rem;
 }
 
 footer > .col {
-    text-align: center;
-    height: 100%;
-    vertical-align: center;
+  text-align: center;
+  height: 100%;
+  vertical-align: center;
 }
+
+.fp-viewing-section1 #fp-nav ul li a span {
+  background: red;
+}
+
+.fp-viewing-section2 #fp-nav ul li a span {
+  background: blue;
+}
+
+.fp-tooltip {
+  color: black !important;
+  font-family: "IBM Plex Sans", serif !important;
+}
+
+#bride-groom {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.212)), to(rgba(255, 255, 255, 0.616))), url("/assets/821.jpg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.616) 100%), url("/assets/821.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 30%;
+  text-align: center;
+}
+
+#bride-groom h1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+#bride-groom .row .alt {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #bride-groom .row .alt {
+    display: inline !important;
+  }
+  #bride-groom .row .second {
+    display: none !important;
+  }
+}
+
+#bride-groom .row .col-md-6 {
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#bride-groom .row .col-md-6 h2 {
+  font-family: "Love Light", cursive;
+  font-size: 5rem;
+  margin-bottom: 5%;
+  font-weight: 500;
+}
+
+#bride-groom .row .text-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#events {
+  text-align: center;
+  background-color: #eeeeee;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#events h1 {
+  margin-top: 4%;
+}
+
+#events .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#events #reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media only screen and (max-width: 600px) {
+  #events #reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #events #one {
+    padding: 1% !important;
+  }
+  #events #two {
+    padding: 1% !important;
+  }
+}
+
+#events .col-md-3 {
+  padding: 1%;
+  margin: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#events .col-md-3 p {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Licorice", cursive;
+  margin: 1%;
+  padding: 1%;
+}
+
+#events .col-md-3 span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#events .col-md-3 img {
+  height: 200px;
+}
+
+#events #one {
+  padding-left: 5% !important;
+  padding-right: 0px;
+}
+
+#events #two {
+  padding-right: 5% !important;
+  padding-left: 0px;
+}
+
+#events .col-md-6 {
+  margin-bottom: 5%;
+}
+
+#events .col-md-6 p {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Licorice", cursive;
+  margin: 1%;
+  padding: 1%;
+}
+
+#events .col-md-6 span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#events .col-md-6 img {
+  height: 250px;
+}
+
+#gallery {
+  text-align: center;
+}
+
+#gallery .carasoul {
+  padding: 10%;
+}
+/*# sourceMappingURL=styles.css.map */
