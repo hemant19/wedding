@@ -11,3 +11,14 @@
 // }
 
 // populateGallery(["assets/landing.jpeg", "assets/landing.jpeg","assets/landing.jpeg","assets/landing.jpeg","assets/landing.jpeg","assets/landing.jpeg"]);
+
+var preloaderFadeOutTime = 5500
+var preloader = $("#loader");
+preloader.fadeOut(preloaderFadeOutTime);
+new fullpage("#fullpage", {
+    controlArrows: true,
+    verticalCentered: false,
+    navigation: true,
+    navigationTooltips: ['Home', 'Bride & Groom', 'Events', 'Gallery', 'Video'],
+    scrollOverflow: true
+});

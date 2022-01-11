@@ -6,7 +6,7 @@
   "scripts": {
     "start": "web-dev-server --node-resolve --watch --open",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf public && mkdir public && cp -r assets css index.html public/"
+    "build": "rm -rf public && mkdir public && cp -r js assets css index.html public/"
   },
   "author": "",
   "license": "ISC",
