@@ -34,12 +34,10 @@
     <div id="loader">
         <img src="assets/loader.gif" alt="">
     </div>
-    <div class="container-fluid" id="fullpage">
+    <div class="container-fluid" id="fullpage" style="height: 100vh;">
         <div class="section">
             <span class="down-arrow">
-
                 <i class="fas fa-chevron-down" onclick="fullpage_api.moveSectionDown();"></i>
-
             </span>
             <div id="wedding-banner" class="row">
                 <div class="col-8 offset-2 col-md-3 offset-md-1">
@@ -50,7 +48,7 @@
                     </div>
                     <div class="row ">
                         <div class="col save-the-date">
-                            <img src="assets/save-the-date.png" width="200vw" />
+                            <img src="assets/save-the-date.webp" width="200vw" />
                         </div>
                     </div>
                     <div class="row wedding-banner-text"></div>
@@ -69,7 +67,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="assets/ind-hemant.jpg" class="img-fluid" />
+                    <img src="assets/ind-hemant.webp" class="img-fluid" />
 
                 </div>
                 <div class="col-md-6 text-part">
@@ -90,7 +88,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 alt">
-                    <img src="assets/ind-pracheta.jpg" class="img-fluid" />
+                    <img src="assets/ind-pracheta.webp" class="img-fluid" />
 
                 </div>
                 <div class="col-md-6 text-part">
@@ -109,7 +107,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 second">
-                    <img src="assets/ind-pracheta.jpg" class="img-fluid" />
+                    <img src="assets/ind-pracheta.webp" class="img-fluid" />
 
                 </div>
 
@@ -121,26 +119,26 @@
                 <h1>Events</h1>
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="assets/haldi.png" alt="">
+                        <img src="assets/haldi.webp" alt="">
                         <p>Haldi <span>6th Feburary 2:00 PM</span></p>
                     </div>
                     <div class="col-md-3" id="reverse">
-                        <img src="assets/barat.png" alt="">
+                        <img src="assets/barat.webp" alt="">
                         <p>Barat <span>6th Feburary 6:00 PM</span></p>
                     </div>
                     <div class="col-md-3">
-                        <img src="assets/sangeet.png" alt="">
+                        <img src="assets/sangeet.webp" alt="">
                         <p>Sangeet <span>6th Feburary 9:00 PM</span></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6" id="one">
-                        <img src="assets/wedding.png" alt="">
+                        <img src="assets/wedding.webp" alt="">
                         <p>Wedding <span>7th Feburary 11:30 AM</span></p>
                     </div>
-                    <!-- <img src="assets/ganesha.png" id="ganesha" alt=""> -->
+                    <!-- <img src="assets/ganesha.webp" id="ganesha" alt=""> -->
                     <div class="col-md-6" id="two">
-                        <img src="assets/phere.png" alt="">
+                        <img src="assets/phere.webp" alt="">
                         <p>Phere <span>7th Feburary 1:00 PM</span></p>
                     </div>
 
@@ -152,30 +150,13 @@
             <div class="row">
                 <h1>Gallery</h1>
             </div>
-            <div class="row carasoul">
-                <div class="slide"> <img src="assets/landing.jpeg" alt="" srcset="" height="700"></div>
-                <div class="slide"><img src="assets/landing.jpeg" alt="" srcset="" height="700"></div>
-                <div class="slide"><img src="assets/landing.jpeg" alt="" srcset="" height="700"></div>
-                <!-- <div id="gallery-carousel" class="col-md-10 offset-md-1 carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner"></div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div> -->
-            </div>
+
         </div>
-        <div class="row section">
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/Sl-AI-rbfMY"
+        <div class="row section" id="video">
+            <!-- <iframe width="853" height="300" src="https://www.youtube.com/embed/Sl-AI-rbfMY"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen></iframe> -->
         </div>
 
         <footer class="row">
@@ -183,9 +164,11 @@
         </footer>
     </div>
     <script>
-        var preloaderFadeOutTime = 5500
-        var preloader = $("#loader");
-        preloader.fadeOut(preloaderFadeOutTime);
+        $(window).on('load', function () {
+            var preloaderFadeOutTime = 1000;
+            var preloader = $("#loader");
+            preloader.fadeOut(preloaderFadeOutTime);
+        });
         new fullpage("#fullpage", {
             controlArrows: true,
             verticalCentered: false,

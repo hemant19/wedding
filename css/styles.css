@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
 }
 
 #wedding-banner {
-  background: url("/assets/landing.jpeg") no-repeat center center;
+  background: url("/assets/landing.webp") no-repeat center center;
   background-size: cover;
   background-position: 65%;
   height: inherit;
@@ -132,8 +132,8 @@ footer > .col {
 }
 
 #bride-groom {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.212)), to(rgba(255, 255, 255, 0.616))), url("/assets/821.jpg");
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.616) 100%), url("/assets/821.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.212)), to(rgba(255, 255, 255, 0.616))), url("/assets/821.webp");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.616) 100%), url("/assets/821.webp");
   background-position: center;
   background-repeat: repeat;
   background-size: 30%;
