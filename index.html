@@ -31,12 +31,12 @@
     <div id="loader">
         <img src="assets/loader.gif" alt="">
     </div>
-    <div class="container-fluid" id="fullpage" style="height: 100vh;">
+    <div class="container-fluid" id="fullpage">
         <div class="section">
             <span class="down-arrow">
                 <i class="fas fa-chevron-down" onclick="fullpage_api.moveSectionDown();"></i>
             </span>
-            <div id="wedding-banner" class="row">
+            <div id="wedding-banner" class="row" style="height: 100vh !important;">
                 <div class="col-8 offset-2 col-md-3 offset-md-1">
                     <div class="row wedding-banner-all">
                         <div class="col wedding-banner-text" style="padding-top: 5vh">
@@ -146,6 +146,9 @@
             <div class="row">
                 <h1>Gallery</h1>
             </div>
+            <div class="row">
+
+            </div>
         </div>
         <div class="row section" id="video">
             <!-- <iframe width="853" height="300" src="https://www.youtube.com/embed/Sl-AI-rbfMY"
@@ -158,33 +161,17 @@
             <div class="col">Designed and built by the bride and groom!</div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="js/vendors/fullpage.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(window).on('load', function () {
-            var preloaderFadeOutTime = 1000;
-            var preloader = $("#loader");
-            preloader.fadeOut(preloaderFadeOutTime);
-        });
-        new fullpage("#fullpage", {
-            controlArrows: true,
-            verticalCentered: false,
-            navigation: true,
-            navigationTooltips: ['Home', 'Bride & Groom', 'Events', 'Gallery', 'Video'],
-            scrollOverflow: true
-        });
 
-
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
 
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>

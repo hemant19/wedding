@@ -215,6 +215,16 @@ footer > .col {
           flex-direction: column-reverse;
 }
 
+#events #one {
+  padding-left: 5% !important;
+  padding-right: 0px;
+}
+
+#events #two {
+  padding-right: 5% !important;
+  padding-left: 0px;
+}
+
 @media only screen and (max-width: 600px) {
   #events #reverse {
     -webkit-box-orient: vertical;
@@ -227,6 +237,7 @@ footer > .col {
   }
   #events #two {
     padding: 1% !important;
+    padding-right: 1% !important;
   }
 }
 
@@ -263,16 +274,6 @@ footer > .col {
 
 #events .col-md-3 img {
   height: 200px;
-}
-
-#events #one {
-  padding-left: 5% !important;
-  padding-right: 0px;
-}
-
-#events #two {
-  padding-right: 5% !important;
-  padding-left: 0px;
 }
 
 #events .col-md-6 {
