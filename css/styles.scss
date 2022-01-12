@@ -263,3 +263,28 @@ footer > .col {
     padding: 10%;
   }
 }
+
+#video {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.212) 0%,
+      rgba(255, 255, 255, 0.616) 100%
+    ),
+    url("/assets/821.webp");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 30%;
+  display: flex;
+  align-items: center;
+
+  iframe {
+    height: 100vh;
+    padding: 0px;
+    width: 100vw;
+    border: 3px solid #000;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+  }
+}
