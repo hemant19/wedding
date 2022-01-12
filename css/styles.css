@@ -169,6 +169,7 @@ footer > .col {
 #gallery {
   text-align: center;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #gallery h1 {
