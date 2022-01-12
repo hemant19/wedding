@@ -99,6 +99,11 @@ h1 {
   font-size: 5.5rem;
 }
 
+.section-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 footer > .col {
   text-align: center;
   height: 100%;
@@ -180,10 +185,5 @@ footer > .col {
 #gallery .gallery-item {
   height: 200px;
   padding: 5px;
-}
-
-.enagagement-video {
-  height: 70vh;
-  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
