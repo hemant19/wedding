@@ -301,7 +301,8 @@ footer > .col {
   text-align: center;
 }
 
-#gallery .carasoul {
-  padding: 10%;
+#gallery .gallery-item {
+  height: 200px;
+  padding: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
