@@ -19,8 +19,8 @@ $(window).on("load", function () {
           galleryId: "nature",
           plugins: [lgZoom, lgThumbnail],
           mobileSettings: {
-            controls: false,
-            showCloseIcon: false,
+            controls: true,
+            showCloseIcon: true,
             download: false,
             rotate: false,
           },

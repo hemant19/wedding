@@ -5,14 +5,24 @@ $media-desktop: "only screen and (max-width : 1024px)";
 $media-tablet: "only screen and (max-width : 768px)";
 $media-mobile: "only screen and (max-width : 600px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
+
 body {
-  height: 100vh !important;
-  width: 100vw !important;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.212) 0%,
+    rgba(255, 255, 255, 0.616) 100%
+  ), url("/assets/821.webp");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 30%;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
+
 #loader {
   position: fixed;
   width: 100vw !important;
@@ -26,34 +36,18 @@ body::-webkit-scrollbar {
   padding: auto;
   align-self: center;
   flex-direction: column;
-  // background: #fff url("/assets/loader.gif") no-repeat center center;
-}
-.container-fluid {
-  padding: 0px !important;
-}
-.section {
-  height: 100vh !important;
-}
-
-#gallery {
-  min-height: 50vh;
 }
 
 #wedding-banner {
   background: url("/assets/landing.webp") no-repeat center center;
   background-size: cover;
   background-position: 65%;
-  height: inherit;
 }
+
 .fas {
   font-size: 50px;
-
   color: white;
 }
-
-// #events {
-//   background-color: aliceblue;
-// }
 
 .down-arrow {
   position: absolute;
@@ -62,6 +56,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
+
 .down-arrow:hover {
   top: 91vh;
 }
@@ -91,15 +86,13 @@ body::-webkit-scrollbar {
     margin-top: 35vh;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .save-the-date {
     padding-top: 20vh;
   }
 }
-footer {
-  height: 5vh;
-  background-color: aliceblue;
-}
+
 h1 {
   font-family: "Mea Culpa", cursive;
   font-weight: 500;
@@ -111,45 +104,22 @@ footer > .col {
   height: 100%;
   vertical-align: center;
 }
+
 .fp-viewing-section1 #fp-nav ul li a span {
   background: red;
 }
+
 .fp-viewing-section2 #fp-nav ul li a span {
   background: blue;
 }
+
 .fp-tooltip {
   color: black !important;
   font-family: "IBM Plex Sans", serif !important;
 }
 
 #bride-groom {
-  background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.212) 0%,
-      rgba(255, 255, 255, 0.616) 100%
-    ),
-    url("/assets/821.webp");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: 30%;
-  text-align: center;
-  h1 {
-    margin-top: 3%;
-    margin-bottom: 3%;
-  }
   .row {
-    .alt {
-      display: none;
-    }
-    @media only screen and (max-width: 600px) {
-      .alt {
-        display: inline !important;
-      }
-      .second {
-        display: none !important;
-      }
-    }
-
     .col-md-6 {
       padding-left: 7%;
       padding-right: 7%;
@@ -171,90 +141,23 @@ footer > .col {
   }
 }
 
-#events {
-  text-align: center;
+.background-white {
   background-color: #eeeeee;
-  // background-image: url("/assets/cool-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  h1 {
-    margin-top: 4%;
-  }
-  .row {
-    align-items: center;
-    display: flex;
-  }
-  #reverse {
-    flex-direction: column-reverse;
-  }
-  #one {
-    padding-left: 5% !important;
-    padding-right: 0px;
-  }
-  #two {
-    padding-right: 5% !important;
-    padding-left: 0px;
-  }
-  @media only screen and (max-width: 600px) {
-    #reverse {
-      flex-direction: column;
-    }
-    #one {
-      padding: 1% !important;
-    }
-    #two {
-      padding: 1% !important;
-      padding-right: 1% !important;
-    }
-  }
-  .col-md-3 {
-    padding: 1%;
-    margin: 4%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    align-self: center;
-    flex-direction: column;
-    p {
-      font-size: 3rem;
-      font-weight: 700;
-      font-family: "Licorice", cursive;
-      margin: 1%;
-      padding: 1%;
-    }
-    span {
-      font-size: 1.5rem;
-      font-weight: 500;
-    }
-    img {
-      height: 200px;
-    }
-  }
-  // #ganesha {
-  //   position: absolute;
-  //   left: 40vw;
-  //   margin-top: -20px;
-  //   height: 20%;
-  //   width: 20%;
-  // }
+}
 
-  .col-md-6 {
-    margin-bottom: 5%;
-    p {
-      font-size: 3rem;
-      font-weight: 700;
-      font-family: "Licorice", cursive;
-      margin: 1%;
-      padding: 1%;
-    }
-    span {
-      font-size: 1.5rem;
-      font-weight: 500;
-    }
-    img {
-      height: 250px;
-    }
+#events {
+  img {
+    max-height: 250px;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Licorice", cursive;
+    margin: 1%;
+    padding: 1%;
   }
 }
 
@@ -264,28 +167,17 @@ footer > .col {
     font-weight: 500;
   }
   text-align: center;
-  background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.212) 0%,
-      rgba(255, 255, 255, 0.616) 100%
-    ),
-    url("/assets/821.webp");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: 30%;
-  overflow: scroll;
+  overflow-y: scroll;
+
   .gallery-item {
     height: 200px;
     padding: 5px;
   }
+
 }
 
-// #video {
-//   height: fit-content;
-//   width: fit-content;
-//   iframe {
-//     height: 100vh;
-//     padding: 0px;
-//     width: 100vw !important;
-//   }
-// }
+.enagagement-video {
+  height: 70vh;
+  width: 100%;
+}
+
