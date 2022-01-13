@@ -10,10 +10,11 @@ body {
   min-height: 100vh;
   width: 100vw;
   background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.212) 0%,
-    rgba(255, 255, 255, 0.616) 100%
-  ), url("/assets/821.webp");
+      to bottom,
+      rgba(255, 255, 255, 0.212) 0%,
+      rgba(255, 255, 255, 0.616) 100%
+    ),
+    url("/assets/821.webp");
   background-position: center;
   background-repeat: repeat;
   background-size: 30%;
@@ -147,15 +148,35 @@ footer > .col {
 }
 
 .background-white {
-  background-color: #eeeeee;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgb(247, 237, 227) 39.5%,
+    rgba(100, 46, 122, 0.23) 100.2%
+  );
+
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 
 #events {
+  @media only screen and (max-width: 600px) {
+    .design {
+      display: none;
+    }
+  }
+
   img {
     max-height: 250px;
+  }
+  .design {
+    position: absolute;
+    left: 0px;
+    top: -50px;
+    height: 300px !important;
+    max-height: 300px !important;
+    opacity: 0.5;
+    transform: rotate(160deg);
   }
   p {
     font-size: 2rem;
@@ -178,5 +199,30 @@ footer > .col {
   .gallery-item {
     height: 200px;
     padding: 5px;
+  }
+}
+footer {
+  margin: 3%;
+  font-size: 2rem;
+  font-family: "Licorice", cursive;
+}
+#video {
+  @media only screen and (max-width: 600px) {
+    .design {
+      display: none;
+    }
+  }
+  .design {
+    position: absolute;
+    right: -10px;
+    top: -40px;
+    height: 300px;
+    opacity: 0.5;
+    // transform: rotateY(180deg);
+    // transform: rotate(50deg) !important;
+    transform: rotateX(180deg);
+  }
+  .row {
+    margin-bottom: 3%;
   }
 }

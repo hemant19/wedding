@@ -33,6 +33,12 @@ new fullpage("#fullpage", {
   controlArrows: true,
   verticalCentered: false,
   navigation: true,
-  navigationTooltips: ["Home", "Bride & Groom", "Events", "Gallery", "Video"],
+  navigationTooltips: [
+    "Home",
+    "Bride & Groom",
+    "Events",
+    "Gallery",
+    "Engagement",
+  ],
   scrollOverflow: true,
 });
