@@ -6,7 +6,7 @@ $(window).on("load", function () {
   $("#animated-thumbnails-gallery")
     .justifiedGallery({
       captions: false,
-      lastRow: "hide",
+      lastRow: "center",
       rowHeight: 180,
       margins: 5,
     })
