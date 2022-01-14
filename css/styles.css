@@ -208,12 +208,12 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  #video .design {
+  #engagement .design {
     display: none;
   }
 }
 
-#video .design {
+#engagement .design {
   position: absolute;
   right: -10px;
   top: -40px;

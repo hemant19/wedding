@@ -39,6 +39,7 @@ new fullpage("#fullpage", {
     "Events",
     "Gallery",
     "Engagement",
+    "Pre Wedding"
   ],
   scrollOverflow: true,
 });
