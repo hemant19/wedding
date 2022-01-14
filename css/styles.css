@@ -2,10 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
 body {
-  min-height: 100vh;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.212)), to(rgba(255, 255, 255, 0.616))), url("/assets/821.webp");
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.616) 100%), url("/assets/821.webp");
+  background: url("/assets/821.webp");
   background-position: center;
   background-repeat: repeat;
   background-size: 30%;

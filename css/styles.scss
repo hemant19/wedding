@@ -7,14 +7,8 @@ $media-mobile: "only screen and (max-width : 600px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
 
 body {
-  min-height: 100vh;
   width: 100vw;
-  background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.212) 0%,
-      rgba(255, 255, 255, 0.616) 100%
-    ),
-    url("/assets/821.webp");
+  background: url("/assets/821.webp");
   background-position: center;
   background-repeat: repeat;
   background-size: 30%;
