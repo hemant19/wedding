@@ -189,11 +189,11 @@ footer > .col {
   text-align: center;
   overflow-y: scroll;
   overflow-x: hidden;
+}
 
-  .gallery-item {
-    height: 200px;
-    padding: 5px;
-  }
+.inline-gallery-container {
+  height: 75vh;
+  width: 100%;
 }
 
 footer {
