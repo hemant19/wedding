@@ -38,9 +38,9 @@ $(window).on("load", function () {
       "Home",
       "Bride & Groom",
       "Events",
-      "Gallery",
       "Engagement",
-      "Pre Wedding"
+      "Pre Wedding",
+      "Gallery"
     ],
     scrollOverflow: true,
   });
