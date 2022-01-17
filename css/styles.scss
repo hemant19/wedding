@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
 }
 
-#wedding-banner {
+.wedding-banner {
   background: url("/assets/landing.webp") no-repeat center center;
   background-size: cover;
   background-position: 65%;
@@ -118,7 +118,7 @@ footer > .col {
   font-family: "IBM Plex Sans", serif !important;
 }
 
-#bride-groom {
+.bride-groom {
   .row {
     .col-md-6 {
       padding-left: 7%;
@@ -153,7 +153,7 @@ footer > .col {
   // background-size: cover;
 }
 
-#events {
+.events {
   @media only screen and (max-width: 600px) {
     .design {
       display: none;
@@ -181,7 +181,7 @@ footer > .col {
   }
 }
 
-#gallery {
+.gallery {
   h1 {
     margin: 2%;
     font-weight: 500;
@@ -202,7 +202,7 @@ footer {
   font-family: "Licorice", cursive;
 }
 
-#engagement {
+.engagement {
   @media only screen and (max-width: 600px) {
     .design {
       display: none;
@@ -217,7 +217,7 @@ footer {
     transform: rotateX(180deg);
   }
 }
-#prewedding {
+.prewedding {
   @media only screen and (max-width: 600px) {
     .design {
       display: none;

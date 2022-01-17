@@ -128,7 +128,7 @@ footer > .col {
   padding-bottom: 3%;
 }
 
-,bride-groom .row .col-md-6 h2 {
+.bride-groom .row .col-md-6 h2 {
   font-family: "Love Light", cursive;
   font-size: 5rem;
   margin-bottom: 5%;
@@ -155,7 +155,7 @@ footer > .col {
 }
 
 @media only screen and (max-width: 600px) {
-  #events .design {
+  .events .design {
     display: none;
   }
 }
@@ -206,7 +206,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  #engagement .design {
+  .engagement .design {
     display: none;
   }
 }
