@@ -217,3 +217,18 @@ footer {
     transform: rotateX(180deg);
   }
 }
+#prewedding {
+  @media only screen and (max-width: 600px) {
+    .design {
+      display: none;
+    }
+  }
+  .design {
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    height: 300px;
+    opacity: 0.5;
+    transform: rotate(180deg);
+  }
+}
