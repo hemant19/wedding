@@ -40,7 +40,8 @@ $(window).on("load", function () {
       "Events",
       "Engagement",
       "Pre Wedding",
-      "Gallery"
+      "Gallery",
+      "Footer"
     ],
     scrollOverflow: true,
   });
