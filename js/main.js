@@ -24,7 +24,7 @@ $(window).on("load", function () {
     dynamic: true,
     hash: false,
     closable: false,
-    showMaximizeIcon: true,
+    showMaximizeIcon: false,
     slideDelay: 400,
     dynamicEl: dynamicEl,
     plugins: [lgZoom, lgThumbnail]
