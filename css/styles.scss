@@ -204,6 +204,9 @@ footer {
 
 .engagement {
   @media only screen and (max-width: 600px) {
+    .video {
+      margin-top: 20vh;
+    }
     .design {
       display: none;
     }
