@@ -120,24 +120,12 @@ footer > .col {
 
 .bride-groom {
   .row {
-    .col-md-6 {
-      padding-left: 7%;
-      padding-right: 7%;
-      padding-top: 3%;
-      padding-bottom: 3%;
       h2 {
         font-family: "Love Light", cursive;
         font-size: 5rem;
         margin-bottom: 5%;
         font-weight: 500;
       }
-    }
-    .text-part {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-self: center;
-    }
   }
 }
 
@@ -234,4 +222,8 @@ footer {
     opacity: 0.5;
     transform: rotate(180deg);
   }
+}
+
+.img-social {
+  height: 48px;
 }

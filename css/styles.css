@@ -121,33 +121,11 @@ footer > .col {
   font-family: "IBM Plex Sans", serif !important;
 }
 
-.bride-groom .row .col-md-6 {
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.bride-groom .row .col-md-6 h2 {
+.bride-groom .row h2 {
   font-family: "Love Light", cursive;
   font-size: 5rem;
   margin-bottom: 5%;
   font-weight: 500;
-}
-
-.bride-groom .row .text-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 .background-white {
@@ -238,5 +216,9 @@ footer {
   opacity: 0.5;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.img-social {
+  height: 48px;
 }
 /*# sourceMappingURL=styles.css.map */
