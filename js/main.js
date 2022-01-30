@@ -44,6 +44,7 @@ $(window).on("load", function () {
       "Footer"
     ],
     scrollOverflow: true,
+    autoScrolling: false
   });
 
 
